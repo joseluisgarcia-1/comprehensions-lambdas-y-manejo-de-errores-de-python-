@@ -1,0 +1,170 @@
+***Clase 2 Zen de python***
+
+- Beautiful is better than ugly.
+- Explicit is better than implicit.
+- Simple is better than complex.
+- Complex is better than complicated.
+- Flat is better than nested.
+- Sparse is better than dense.
+- Readability counts.
+- Special cases aren't special enough to break the rules.
+- Although practicality beats purity.
+- Errors should never pass silently.
+- Unless explicitly silenced.
+- In the face of ambiguity, refuse the temptation to guess.
+- There should be one-- and preferably only one --obvious way to do it.
+- Although that way may not be obvious at first unless you're Dutch.
+- Now is better than never.
+- Although never is often better than *right* now.
+- If the implementation is hard to explain, it's a bad idea.
+- If the implementation is easy to explain, it may be a good idea.
+- Namespaces are one honking great idea -- let's do more of those!
+
+Traducción
+
+- Bello es mejor que feo:
+    - Pyhton es estéticamente superior a cualquier otro lenguaje de programación. Al momento de escribir código, es mejor que sea de manera limpia y estética.
+- Explícito es mejor que implícito:
+    - Hacer más fácil que las otras personas entiendan el código.
+- Simple es mejor que complejo:
+    - Es mejor tener una implementación simple, que ocupe pocas lineas de código y sea entendible, a que sea una larga y complicada.
+- Complejo es mejor que complicado:
+    - Si tenemos que extendernos en la implementación y hacerla más compleja para que el código si se entienda, esto es mejor que hacerlo simple y mal.
+- Plano es mejor que anidado:
+    - El anidamiento es cuando tenemos un bloque de código dentro de otro bloque de código (dependiendo de este). Esto se nota en Python por la identación, nos quedarían estos bloques muy corridos a la derecha.
+    - Es mejor evitar el anidamiento, y hacer las cosas de manera plana.
+- Espaciado es mejor que denso:
+    - Por la identación de Python (sus sangrías), este principio se nos hace imposible de esquivar. El código inevitablemente es espaciado.
+- La legibilidad es importante:
+    - Es importante que otros programadores puedan entender lo que estamos escribiendo. Esto hace más fáciles las cosas cuando trabajemos con otros en los proyectos.
+- Los casos especiales no son lo suficientemente especiales cpmo para romper las reglas (sin embargo, la practicidad le gana a la pureza):
+    - Siempre que podamos respetar estas reglas que nos plantea Python, es mejor así. Sin embargo, si por el hecho de hacer un código muy puro o muy ‘Pythonista’, este pierde legibilidad, es mejor ser más prácticos y romper o saltearnos algunas de estas reglas para que el código sea más eficiente. Por lo tanto, llegado el momento debermos decidir si es mejor hacer las cosas de manera pura o práctica.
+- Los errores nunca deberían pasar silenciosamente (a menos que se silencien explícitamente):
+    - Manejar los erroes es fundamental. Cada error nos dice algo y hay que prestarle atención. A menos que seas capaz de silenciar un error explícitamente, aunque para esto hay que tener criterio.
+- Frente a la ambiguedad, evitar la tentación de adivinar:
+    - Nuestro código debería solamente tener una interpretación. Si en un contexto significa algo, y en otro otra cosa, es mejor que lo revisemos y busquemos una solución.
+- Debería haber una, y preferiblemente sola, una manera obvia de hacerlo. (A pesar de que esa manera no sea obvia a menos que seas holandés):
+    - Esto hace referencia al creador de Python ''Guido van Rossum", que de manera muy inteligente encontrar las soluciones precisas a los problemas, y deberíamos imitarlo.
+- Ahora es mejor que nunca:
+    - Es mejor desarrollar nuestra solución cuánto antes, no dejarlo para mañana o para mas adelante.
+- A pesar de que nunca es muchas veces mejor que ahora mismo:
+    - Si por hacer las cosas ya y tenemos poco tiempo, si es mejor dejarlo para después y no hacerlo apurado y mal.
+- Si la implementación es díficil de explicar, es una mala idea, y si es fácil de explicar, es una buena idea:
+    - Si somos capaces de explicar nuestra implementación a otros desarrolladores paso a paso, es una buena idea. En cambio si no podemos hacerlo, significa que ni nosotros entendemos la implementación y deberíamos repensar nuestra forma de encarar la solución.
+- **Los espacios de nombres son una gran idea, ¡Tengamos más de esos! (namespaces):
+    - Es el nombre que se ha indicado luego de la palabra import, es decir la ruta (namespace) del módulo. (Lo veremos a profundidad más adelante).
+
+***Clase 3 ¿Qué es la documentación?***
+
+En esta encontramos todo con respecto a la funcionalidad del lenguaje, errores, sintáxis, referencias del lenguajes, tutoriales
+ahí encontramos los PEP: son los documentos que conforman a toda la guía de estilos del lenguaje, es una guía de como se debe escribir el lenguaje python, el pep8 es la guia de estilos de python
+en esta podemos ver las buenas prácticas que debemos tener para escribir python
+
+https://peps.python.org/pep-0008/
+
+***Clase 4 ¿Qué es un entorno virtual?***
+
+Módulo: Básicamente es código escrito por otra persona que nos sirve para solucionar un problema de manera rápida
+por ejemplo tenemos el módulo Random
+
+Es ese python aislado para un solo proyecto que tiene sus propios módulos y funcionar únicamente ahí
+
+Aprendí sobre los entornos virtuales gracias al Curso de Creación Lenguajes de Programación: Intérpretes, la idea es sencilla, de hecho el concepto es similar al de los contenedores de Docker, como profesional empezarás a requerir de trabajar diversos proyectos que trabajen con diferentes versiones, ya sea del lenguaje o de algún módulo.
+Sería una catástrofe tener que instalar y actualizar módulos para cada proyecto cuidando que ninguno se rompa, porque fácilmente podrías actualizar un módulo que, para un proyecto funcione, pero para otro deje de funcionar, es por eso que se crea el concepto de entornos virtuales.
+Este concepto lo tienen muchos lenguajes, y lo genial es que soluciona muy bien el problema de la compatibilidad entre proyectos, porque cada entorno virtual es independiente y funciona con las versiones que se les hayan instalado ahí mismo 😄.
+
+Recomendado de la Clase:
+
+https://platzi.com/cursos/interpretes-software/
+
+***Clase 5 El primer paso profesional: creación de un entorno virtual***
+
+para crear un ambiente en windows con cmder me funcionó así:
+- python -m venv venv
+- python -m venv venv2
+
+- -m -> significa que vamos a modificar el funcionamiento normal por otra cosa, y en python -m significa modulo, es decir, vamos a llamar a un módulo interno del lenguaje
+- venv -> significa que estamos llamando al módulo venv que hace referencia al entorno virtual, lo que quiere decir es que le estamos diciendo a la consola que nos cree un virtual environment
+- venv2 -> es el nombre que le vamos a colocar al entorno virtual
+
+y ya con eso se nos crea el entorno virtual para trabajar 
+- ahora para entrar al entorno virtual y trabajar, es decir, activarlo es así:
+
+- para activar el entorno virtual en Mac o linux:
+    - source venv/bin/activate
+        donde venv recordar que es el nombre del entorno virtual
+- para activar el entorno virtual en windows con cmder
+    .\venv\Scripts\activate
+- para activar el entorno virtual en windows con git bash
+    source venv2/Scripts/activate
+
+usualmente en el mundo de la programación se suele llamar al entorno virtual que se crea como venv al igual que el módulo, pero en este ejemplo para evitar confusiones lo creé como venv2
+
+***Clase 6 Instalación de dependencias con pip***
+
+- PIP: Package Installer for Python
+hay módulos que están dentro de python pero hay otros que no están instalados, por ende, para obtenerlos usamos pip
+este módulo viene dentro de python para instalar otros módulos
+por ejemplo:
+    - Requests
+    - BeautifulSoup4
+    - Pandas
+    - Numpy
+    - Pytest
+
+cuando ingresamos al entorno virtual e instalamos módulos o dependencias, estas quedan instaladas solo en ese entorno virtual
+- pip freeze: con este comando podemos ver qué módulos tenemos instalados ya sea en nuestro entorno virtual como por fuera
+y para instalar un módulo es así, como ejemplo:
+
+- pip install pandas
+- pip install django
+
+IMPORTANTE:
+
+si por ejemplo yo estoy desarrollando una app y quiero que un compañero u otra persona en su entorno instale exactamente los mismos requerimientos que yo tengo
+o los mismos módulos, lo hago de la siguiente manera:
+
+- pip freeze > requirements.txt
+y ya con eso, tenemos los programas que tengo en mi local listos para pasarselos a otra persona, y ahora para que esa persona los pueda instalar exactos a los mios
+debo ejecutar el siguiente comando:
+- pip install -r requirements.txt
+
+https://pypi.org/project/pipenv/
+Quiz entorno virtual
+
+***Clase 7 Listas y diccionarios anidados***
+
+
+
+***Clase 8 List comprehensions***
+
+***Clase 9 Dictionary comprehensions***
+Quiz alternativa a los ciclos: comprehensions
+
+***Clase 9 Funciones anónimas: lambda***
+
+***Clase 10 High order functions: filter, map y reduce***
+
+***Clase 11 Proyecto: filtrando datos***
+Quiz conceptos avanzados de funciones
+
+***Clase 12 Los errores en el código***
+
+***Clase 13 Debugging***
+
+***Clase 14 Manejo de excepciones***
+
+***Clase 15 Poniendo a prueba el manejo de excepciones***
+
+***Clase 16 Assert statements***
+Quiz manejo de errores
+
+***Clase 17 ¿Cómo trabajar con archivos?***
+
+***Clase 18 Trabajando con archivos de texto en Python***
+Quiz manejo de archivos
+
+***Clase 19 Reto final: Juego del Ahorcado o Hangman Game***
+
+
+***Clase 20 Continúa tu camino profesional con Python***
