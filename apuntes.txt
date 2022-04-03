@@ -139,40 +139,57 @@ cuando creo el archivo .gitignore y no quiero subir un entorno virtual lo coloco
 o así:
 *venv
 
-
-
-
-
-
 ***Clase 8 List comprehensions***
 
+ejemplo de una list comprehensions
+
+    squares = [i**2 for i in range(1,11) if i % 3!=0]
+    print(squares)
+voy a leer la list comprehensions anterior:
+    - para cada i en el rango que va de 1 hasta 11 voy a guardar esa i elevada al cuadrado solamente si la i modulo 3 es distinta de 0 
+        - en otras palabras: para cada i de los números del 1 a 11 voy a guardar esa i al cuadrado solamente si no es divisible por 3
+explicación por partes de la list comprehensions
+[element for element in iterable if condition]
+
+- element
+    - Representa a cada uno de los elementos a poner en una nueva lista
+- for element in iterable
+    - Ciclo a partir del cual se extraerán elementos de otra lista o cualquier iterable
+- if condition
+    - Condición opcional para filtrar los elementos del ciclo
+y se lee así:
+para cada elemento en el iterable voy a guardar ese elemento solo si se cumple la condición
+
 ***Clase 9 Dictionary comprehensions***
+
+
+
 Quiz alternativa a los ciclos: comprehensions
 
-***Clase 9 Funciones anónimas: lambda***
+***Clase 10 Funciones anónimas: lambda***
 
-***Clase 10 High order functions: filter, map y reduce***
+***Clase 11 High order functions: filter, map y reduce***
 
-***Clase 11 Proyecto: filtrando datos***
+***Clase 12 Proyecto: filtrando datos***
 Quiz conceptos avanzados de funciones
 
-***Clase 12 Los errores en el código***
+***Clase 13 Los errores en el código***
 
-***Clase 13 Debugging***
+***Clase 14 Debugging***
 
-***Clase 14 Manejo de excepciones***
+***Clase 15 Manejo de excepciones***
 
-***Clase 15 Poniendo a prueba el manejo de excepciones***
+***Clase 16 Poniendo a prueba el manejo de excepciones***
 
-***Clase 16 Assert statements***
+***Clase 17 Assert statements***
 Quiz manejo de errores
 
-***Clase 17 ¿Cómo trabajar con archivos?***
+***Clase 18 ¿Cómo trabajar con archivos?***
 
-***Clase 18 Trabajando con archivos de texto en Python***
+***Clase 19 Trabajando con archivos de texto en Python***
 Quiz manejo de archivos
 
-***Clase 19 Reto final: Juego del Ahorcado o Hangman Game***
+***Clase 20 Reto final: Juego del Ahorcado o Hangman Game***
 
 
-***Clase 20 Continúa tu camino profesional con Python***
+***Clase 21 Continúa tu camino profesional con Python***
