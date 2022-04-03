@@ -136,6 +136,7 @@ Quiz entorno virtual
 
 
 
+
 ***Clase 8 List comprehensions***
 
 ***Clase 9 Dictionary comprehensions***
