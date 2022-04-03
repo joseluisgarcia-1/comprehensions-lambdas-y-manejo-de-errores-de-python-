@@ -191,5 +191,4 @@ Quiz manejo de archivos
 
 ***Clase 20 Reto final: Juego del Ahorcado o Hangman Game***
 
-
 ***Clase 21 Continúa tu camino profesional con Python***
