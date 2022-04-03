@@ -134,6 +134,13 @@ Quiz entorno virtual
 
 ***Clase 7 Listas y diccionarios anidados***
 
+cuando creo el archivo .gitignore y no quiero subir un entorno virtual lo coloco en el .gitignore así:
+- venv/
+o así:
+*venv
+
+
+
 
 
 
