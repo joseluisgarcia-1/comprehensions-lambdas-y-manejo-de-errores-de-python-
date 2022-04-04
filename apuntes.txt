@@ -173,6 +173,19 @@ Quiz alternativa a los ciclos: comprehensions
 
 ***Clase 10 Funciones anónimas: lambda***
 
+las funciones anónimas valga la redundancia es una función sin nombre, es decir, que no tienen identificador 
+y su estructura es así:
+
+lambda argumentos: expresión
+
+las funciones lambda puede tener los argumentos que nosotros queramos o necesitemos pero una sola línea de código
+
+se conforma de un argumento que es el parametro que recibe la función para trabajar acompañado de la palabra clave lambda tenemos una expresión que es una línea de código
+y tenemos una variable que es un identificador tener en cuenta que ese identificador no es de la función, es de una variable que va contener un objeto de tipo función que retorna 
+todo, recordar que la función lambda no tiene nombre, pero el nombre que tiene esa función con el que la vamos a llamar va ser el nombre de la variable 
+
+- lo bueno de las funciones lambda es que no se necesita poner return
+
 ***Clase 11 High order functions: filter, map y reduce***
 
 ***Clase 12 Proyecto: filtrando datos***
