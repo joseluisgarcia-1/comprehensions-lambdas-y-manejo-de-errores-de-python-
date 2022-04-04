@@ -162,8 +162,13 @@ para cada elemento en el iterable voy a guardar ese elemento solo si se cumple l
 
 ***Clase 9 Dictionary comprehensions***
 
+{key:value for value in iterable if condition}
 
-
+- key:value -> Representa a cada una de las llaves y valores a poner en el nuevo diccionario
+- for value in iterable ->
+- if condition -> condición opcional para filtrar los elementos del ciclo
+se lee así:
+para cada elemento en el iterable voy a colocar una llave y un valor solamente si se cumple la condición
 Quiz alternativa a los ciclos: comprehensions
 
 ***Clase 10 Funciones anónimas: lambda***
