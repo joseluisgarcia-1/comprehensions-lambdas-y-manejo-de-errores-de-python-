@@ -225,10 +225,24 @@ Funciones de orden superior:
         my_list = [1,4,5,6,9,13,19,21]
         odd = list(filter(lambda x: x%2 != 0, my_list))
         print(odd)
-        
+
     - map: 
+        con list comprehensions
+        my_list =[1,2,3,4,5]
+        squares = [i**2 for i in my_list]
+        print(squares)
+        con lambda function y map
+
+        la explicación es así:
+            esta lambda lo que hace es, recibe como parámetro una x y retorna el resultado de una expresión x**2
+            en otras palabras, recibe un número y retorna ese número de la lista elevado a la 2, además tenemos una lista que es el segundo
+            parámetro de la función map, la función map es una función de orden superior que recibe dos parámetros, una función que en este caso
+            es una función anónima llamada lambda function y un iterable que en este caso es una lista llamda my_list, ahora esta función map no nos va a devolver
+            la lista que nosotros queremos porque retorna un iterador, entonces para que sea una lista lo que hacemos es colocar el método lista por encima 
+            de la función map así: list(map)) para que mi resultado quede dentro de una lista
+
         funciona exactamente igual a filter, ejemplo:
-        my_list = [1,4,5,6,9,13,19,21]
+        my_list = [1,4,5,6,9,13,19,21] 
         odd = list(map(lambda x: x**2, my_list))
         print(odd)
     - reduce: 
