@@ -199,8 +199,39 @@ print(palindrome('ana'))
 lo que es lo mismo y debe retornar True o False, en lugar de usar def uso lambda en lugar de pasar los parametros en parentesis, en lambda los coloco sin parentesis
 el identificador se acostumbra a ponerlo como el nombre de la variable en lugar del nombre de la función y en lambda no coloco la palabra clave return, simplemente la omito
 
-
 ***Clase 11 High order functions: filter, map y reduce***
+
+Funciones de orden superior:
+    - Es una función que recibe otra función como parámetro
+
+    - filter: 
+        para su uso como ejemplo, tenemos una lista con números:
+        my_list = [1,4,5,6,9,13,19,21]
+        y quiero tener una lista de esos números, pero únicamente los que son impares
+        [1,5,9,13,19,21]
+        y lo usamos solo con list comprehensions
+        my_list = [1,4,5,6,9,13,19,21]
+        odd = [i for i in my_list if i %2 !=0]
+        print(odd)
+        
+        ahora lo hacemos con list comprehensions y lambda, y la explicación es así:
+        esta lambda lo que hace es, recibe como parámetro una x y retorna el resultado de una expresión x%2 != 0
+        en otras palabras, recibe un número y retorna True o False si ese número es par o impar, además tenemos una lista que es el segundo
+        parámetro de la función filter, la función filter es una función de orden superior que recibe dos parámetros una función que en este caso
+        es una función anónima una lambda function y un iterable que en este caso es una lista, ahora está función filter no nos va a devolver
+        la lista que nosotros queremos porque retorna un iterador, entonces para que sea una lista lo que hacemos es colocar el método lista por encima 
+        de la función filter así: list(filter)) para que mi resultado quede dentro de una lista
+
+        my_list = [1,4,5,6,9,13,19,21]
+        odd = list(filter(lambda x: x%2 != 0, my_list))
+        print(odd)
+        
+    - map: 
+        funciona exactamente igual a filter, ejemplo:
+        my_list = [1,4,5,6,9,13,19,21]
+        odd = list(map(lambda x: x**2, my_list))
+        print(odd)
+    - reduce: 
 
 ***Clase 12 Proyecto: filtrando datos***
 Quiz conceptos avanzados de funciones
