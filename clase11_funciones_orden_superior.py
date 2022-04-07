@@ -14,3 +14,19 @@ print(squares)
 print("function map con function lambda")
 answer_three = list(map(lambda x:x**2,my_list_three))
 print(answer_three)
+print()
+
+print("function de como hacerlo también en lugar de reduce")
+my_list_four = [2,2,2,2,2]
+all_multiplied = 1
+
+for i in my_list_four:
+    all_multiplied = all_multiplied * i
+print(all_multiplied)
+
+print("function reduce")
+from functools import reduce
+
+my_list_five = [2,2,2,2,2]
+all_multi = reduce(lambda a,b: a*b, my_list_five)
+print(all_multi)

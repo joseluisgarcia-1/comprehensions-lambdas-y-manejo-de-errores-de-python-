@@ -247,6 +247,8 @@ Funciones de orden superior:
         print(odd)
     - reduce: 
 
+        iniciando que importar la función reduce de python 
+
 ***Clase 12 Proyecto: filtrando datos***
 Quiz conceptos avanzados de funciones
 
