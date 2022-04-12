@@ -329,6 +329,18 @@ with open ("./ruta/del/archivo.txt", "r") as f:
 
 
 ***Clase 19 Trabajando con archivos de texto en Python***
+
+- función de READ -> LEER
+    - Para esta función usamos la denominación r para dar a entender que no más queremos leer el archivo que le estamos pasando
+
+- función write -> escribir
+    con esta función lo que hacemos es crear un archivo en la carpeta numbers con el nombre de names.txt y usamos el metodo w
+    en ese documento colocamos los nombres que están en la lista names, y si por ejemplo al momento de escribir un nombre lo escribí mal
+    y quiero escribirlo como es realmente lo que hago es corregir y el programa me sobre escribe ese dato, valga la redundancia lo actualiza
+
+- función append -> agregar
+    - con esta función si por ejemplo tenemos ya un archivo en este caso el archivos names.txt y lo que queremos es agregarle información sin que
+    el archivo original sobre escriba lo que ya está entonces usamos la denominación "a" que significa append(agregar)
 Quiz manejo de archivos
 
 ***Clase 20 Reto final: Juego del Ahorcado o Hangman Game***
