@@ -11,8 +11,6 @@ def divisors(num):
 
 def run():
     num = input("Ingresa un número: ")
-    #.isnumeric() -> lo que hace es devolver verdadero si ese string corresponde a una especie de número
-    #y si por el contrario es ingresa una letra se activa el mensaje
     assert num.isnumeric(), "Debes ingresar un número"
     print(divisors(int(num)))
     print("El programa finalizó")

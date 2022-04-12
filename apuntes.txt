@@ -302,6 +302,9 @@ es capturar también ese error, hacer una función para eso.
 ***Clase 16 Poniendo a prueba el manejo de excepciones***
 
 ***Clase 17 Assert statements***
+.isnumeric() -> lo que hace es devolver verdadero si ese string corresponde a una especie de número
+y si por el contrario es ingresa una letra se activa el mensaje
+
 Quiz manejo de errores
 
 ***Clase 18 ¿Cómo trabajar con archivos?***
