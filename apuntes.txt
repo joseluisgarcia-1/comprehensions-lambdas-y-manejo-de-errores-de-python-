@@ -308,6 +308,25 @@ y si por el contrario es ingresa una letra se activa el mensaje
 Quiz manejo de errores
 
 ***Clase 18 ¿Cómo trabajar con archivos?***
+Archivos de texto:
+    - .txt
+    - .py
+    - .json
+    - .js
+    - .xml
+
+Para abrir un archivo de texto con python tenemos 3 formas de hacerlo
+    - R -> Lectura
+    - W -> Escritura(sobrescribir)
+        - Lo que se hace es que si por ejemplo, tengo ya unos scripts en un archivo y uso ese modo de apertura lo que estoy haciendo ahí es 
+        reemplazando lo que hay ya ahí en ese archivo, es decir quitando lo que estaba y queda lo último que coloqué
+    - A -> Escritura(agregar al final)
+        - Lo que se hace con este es por ejemplo si ya tengo unos datos o scripts en ese archivo lo nuevo que coloco se agrega a lo último del archivo, no se borra
+        como el modo anterior
+para abrir un archivo es así:
+función interna de python -> open        
+with open ("./ruta/del/archivo.txt", "r") as f:
+
 
 ***Clase 19 Trabajando con archivos de texto en Python***
 Quiz manejo de archivos
