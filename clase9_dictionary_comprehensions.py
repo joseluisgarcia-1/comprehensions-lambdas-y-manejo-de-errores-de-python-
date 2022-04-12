@@ -18,7 +18,7 @@ def run():
     """
     print("números impares con dict comprehension")
     """
-    - para cada i en el rango de 1 a 11 voy a guardar a i como llave y a i elevado al cubo como valor, solamente si modulo 3 es distinto de 0
+    - para cada i en el rango de 1 a 11 voy a guardar a i como llave e i elevado al cubo como valor, solamente si i modulo 3 es distinto de 0
     - en otras palabras:
         para cada número de 1 a 11 voy a guardar ese número como llave y ese número elevado al cubo como valor si ese número no es divisible entre 3
     """
