@@ -345,4 +345,9 @@ Quiz manejo de archivos
 
 ***Clase 20 Reto final: Juego del Ahorcado o Hangman Game***
 
+- Incorporar list comprehensions
+- Investigar la función enumerate
+- El metodo get de los diccionarios
+- cls, es para limpiar la pantalla en windows
+
 ***Clase 21 Continúa tu camino profesional con Python***
