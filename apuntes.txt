@@ -188,15 +188,57 @@ todo, recordar que la función lambda no tiene nombre, pero el nombre que tiene 
 
 ***Clase 11 High order functions: filter, map y reduce***
 
+función que recibe otra función como parámetro
+my_list = [1,4,5,6,9,13,19,21]
+odd = [i for i in my_list if i %2 != 0]
+print(odd)
+- filter:
+    
+Para trabajar con reduce, se tiene que importar la función de la siguiente manera
+from functools import reduce
+
 ***Clase 12 Proyecto: filtrando datos***
+
+all_python_devs = [worker["name"] for worker in DATA if worker["language"]=="python"]
+donde worker es el nombre de cada una de las partes del código, en lugar de worker se le puede colocar otra designación o nombre
+ 
 Quiz conceptos avanzados de funciones
 
 ***Clase 13 Los errores en el código***
 
+Un error en el código es algo normal, todos los ingenieros de programación por ahí le sale un error, y cuando nos equivocamos python nos avisa que eso pasó
+- Errores:
+    - SyntaxError:
+        - KeyBoardInterrupt:
+            - Este pasa cuando de manera forzada detengo la máquina con ctrl + c
+        - KeyError:
+            - Este error pasa cuando en un diccionario no existe la llave a la cual queremos entrar
+        - IndexError:
+            - Este error pasa cuando en una lista tengo datos y quiero acceder al índice o a la posición de esa lista, por eso me arroja este error
+        - FileNotFoundError:
+            - Este error pasa cuando se quiere abrir un archivo y ese archivo no existe
+        - ZeroDivisionError:
+            - Este error pasa cuando estamos intentando dividir un número entre cero, operación que en matemáticas no está permitida
+        - ImportError:
+            - Este error pasa cuando queremos importar un módulo de python
+    - Exception:
+        Las excepciones detienen el programa y no ejecutan si quiera la primera línea del programa
+
+Los traceback de python se leen de abajo hacia arriba, 
+
 ***Clase 14 Debugging***
+Estudiar debugging de python con visual studio code
 
 ***Clase 15 Manejo de excepciones***
+En esta clase se va a probar que le estamos pidiendo al usuario que nos ingrese una palabra y lo que nos ingresa es un número, entonces para ello
+y evitar que nuestro programa se reviente le vamos a manejar una excepción 
 
+- Si le pasamos una cadena vacía python lo toma como verdadero, es decir, como si fuése un palindromo, sin embargo, no debería hacer eso, entonces lo que se hace
+es capturar también ese error, hacer una función para eso.
+
+- try: finally:
+    - Se usa usualmente al final de una estructura try, except, y se puede cerrar un archivo, liberar recursos externos, entre otros.
+    - Es muy raro su uso
 ***Clase 16 Poniendo a prueba el manejo de excepciones***
 
 ***Clase 17 Assert statements***
